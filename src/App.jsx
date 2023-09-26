@@ -38,8 +38,12 @@ function App() {
             onChange={handleChangeSampleText}
           />
           <select name="" id="" onChange={handleChangeFontSize}>
+            <option value="8px">8px</option>
             <option value="16px">16px</option>
-            <option value="32px">32px</option>
+            <option value="32px" selected>
+              32px
+            </option>
+            <option value="48px">48px</option>
           </select>
           <select name="" id="">
             <option value="white">white</option>

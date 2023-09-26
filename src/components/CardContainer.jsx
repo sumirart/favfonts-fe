@@ -19,9 +19,8 @@ function Card({ sampleText, fontSize }) {
         </div>
         <span className="text-4xl text-red-700 ">+</span>
       </div>
-      <div className="h-40 flex items-center">
-        <p className={`text-[${fontSize}]`}>{sampleText}</p>
-        {/* <p className={`text-[32px]`}>{sampleText}</p> */}
+      <div className="min-h-[10rem] flex items-center minh">
+        <p style={{ fontSize }}>{sampleText}</p>
       </div>
     </div>
   );
