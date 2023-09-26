@@ -1,8 +1,25 @@
-# React + Vite
+# Favorite Fonts Backend Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This is a frontend repository for Favorite Fonts app, an app for Chingu Voyage 46. It use React and other dependencies (some listed below).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Register
+- Login
+- See fonts in real time
+- Change sample text
+
+## How to Setup
+
+- Clone this repository
+- Run `npm install`
+- Run `npm run dev` when in development mode
+- Run `npm run build` to build the project
+
+## Dependencies
+
+- [React](https://www.npmjs.com/package/react)
+- [Vite](https://www.npmjs.com/package/vite)
+- [Tailwind](https://www.npmjs.com/package/tailwindcss)
