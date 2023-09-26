@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "./components/header";
+import Header from "./components/Header";
 import CardContainer from "./components/CardContainer";
 import Footer from "./components/footer";
 function App() {
