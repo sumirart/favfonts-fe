@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import CardContainer from "./components/CardContainer";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 function App() {
   const [searchFont, setSearchFont] = useState("");
   const [sampleText, setSampleText] = useState("");
