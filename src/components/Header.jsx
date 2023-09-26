@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <div className="flex justify-between mt-4 py-4  container mx-auto">
+      <div className="flex justify-between mt-4 py-4  wrapper">
         <p className="text-xl font-semibold">Google Fonts</p>
         <nav>
           <ul className="flex gap-4">
