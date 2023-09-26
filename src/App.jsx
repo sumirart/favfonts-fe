@@ -1,9 +1,18 @@
-import "./App.css";
-
+import Header from "./components/header";
+import Nav from "./components/nav";
+import CardContainer from "./components/CardContainer";
+import Footer from "./components/footer";
 function App() {
   return (
     <>
-      <h1>Hello!</h1>
+      <Header />
+      <div className="container mx-auto">
+        <Nav />
+        <div>
+          <CardContainer />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 }
