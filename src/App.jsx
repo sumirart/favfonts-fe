@@ -2,14 +2,16 @@ import { useState } from "react";
 import Header from "./components/Header";
 import CardContainer from "./components/CardContainer";
 import Footer from "./components/Footer";
+
+import jsonData from "./data.json";
+
 function App() {
   const [searchFont, setSearchFont] = useState("");
   const [sampleText, setSampleText] = useState("");
   const [fontSize, setFontSize] = useState("32px");
 
-  const text = sampleText
-    ? sampleText
-    : "Then came the night of the first falling star.";
+  const text = sampleText || "Then came the night of the first falling star.";
+  const data = jsonData.items.slice(0, 10);
 
   const handleSearchFont = (e) => {
     setSearchFont(e.target.value);
@@ -37,12 +39,15 @@ function App() {
             value={sampleText}
             onChange={handleChangeSampleText}
           />
-          <select name="" id="" onChange={handleChangeFontSize}>
+          <select
+            name=""
+            id=""
+            onChange={handleChangeFontSize}
+            defaultValue="32px"
+          >
             <option value="8px">8px</option>
             <option value="16px">16px</option>
-            <option value="32px" selected>
-              32px
-            </option>
+            <option value="32px">32px</option>
             <option value="48px">48px</option>
           </select>
           <select name="" id="">
@@ -53,7 +58,11 @@ function App() {
           <p>Reload</p>
         </div>
         <div>
-          <CardContainer sampleText={text} fontSize={fontSize} />
+          <CardContainer
+            sampleText={text}
+            fontSize={fontSize}
+            fontsData={data}
+          />
         </div>
         <Footer />
       </div>
