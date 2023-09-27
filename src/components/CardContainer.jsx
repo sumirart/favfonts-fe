@@ -5,7 +5,7 @@ export default function CardContainer(props) {
   const { fontsData, sampleText, fontSize } = props;
   console.log(fontsData);
   return (
-    <div>
+    <div className="fontcard__container">
       {fontsData.map((font, index) => (
         <Card
           font={font}
@@ -20,7 +20,7 @@ export default function CardContainer(props) {
 
 function Card({ font, sampleText, fontSize }) {
   const { family, category } = font;
-  console.log(family);
+
   useEffect(() => {
     WebFont.load({
       google: {
@@ -35,7 +35,7 @@ function Card({ font, sampleText, fontSize }) {
   };
 
   return (
-    <div className="border-t py-2">
+    <div className="border-t py-2 fontcard__item">
       <div className="flex justify-between items-center">
         <div>
           <p className="font-semibold">{family}</p>
